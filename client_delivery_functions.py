@@ -11,3 +11,4 @@ def extract_statuses(my_table, n_statuses):
         colname = 'mod' + str(i + 1)
         my_table[colname] = my_table['json_loads'].str[0].str['statuses'].str[i].str['status']
     return my_table
+
